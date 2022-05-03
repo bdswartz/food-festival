@@ -15,7 +15,7 @@ const FILES_TO_CACHE = [
     "./dist/tickets.bundle.js",
     "./dist/schedule.bundle.js"
   ];
-
+  
   self.addEventListener('install', function (e) {
     e.waitUntil(
       caches.open(CACHE_NAME).then(function (cache) {
